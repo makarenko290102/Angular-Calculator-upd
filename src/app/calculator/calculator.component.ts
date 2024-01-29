@@ -28,7 +28,8 @@ enum EnumCalcModific {
   none = 'none',
   sin = 'sin',
   cos = 'cos',
-  square = 'square'
+  square = 'square', //quadratic
+  sqrt = 'sqrt'
 }
 
 
@@ -40,7 +41,7 @@ export class CalculatorComponent {
 
   public calcOperations = EnumCalcOperation
   public calcModific = EnumCalcModific
-  public calcGroup : ICalcGroup[] = [
+  public calcGroups : ICalcGroup[] = [
     {
     first:{
       value: 10,
@@ -54,9 +55,10 @@ export class CalculatorComponent {
     } 
   ]
 
-  public logHistory: string[] = [];
+  public logHistory: string[] = [];  //сбоку
 
-  public operationBetwGroups: EnumCalcOperations//[] = [];
+  public operationBetwGroups: EnumCalcOperations[] = [];
+
 
   
   //public first: number = 1;

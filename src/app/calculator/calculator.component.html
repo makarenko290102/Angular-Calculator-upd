@@ -1,11 +1,14 @@
 <div class = "calculator">
-    <input type="number" class="calculator__input" [(ngModel)]="first"/>
-    <select class="calculator__select" [(ngModel)]="operation">
+    <ng-container *ngFor="let calcGroup of calcGroups>
+    <input type="number" class="calculator__input" [(ngModel)]="calcGroup.first.value"/>
+    <select class="calculator__select" [(ngModel)]="calcGroup.operation">
         <option [value]="operation" *ngFor="let operation of operations">
             {{operation}}
         </option>
     </select>
-    <input type="number" class="calculator__input" [(ngModel)]="second"/>
+    <input type="number" class="calculator__input" [(ngModel)]="calcGroup.secons.value"/>
+    </ng-container>
+    
     <span class="calculator__result">{{result ? result : 'Нажмите "Расчитать"'}}</span>
     <button (click)="calc()">Рассчитать</button>
 </div>
