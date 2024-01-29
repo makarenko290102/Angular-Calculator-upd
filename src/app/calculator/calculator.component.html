@@ -2,7 +2,7 @@
     <ng-container *ngFor="let calcGroup of calcGroups>
     <input type="number" class="calculator__input" [(ngModel)]="calcGroup.first.value"/>
     <select class="calculator__select" [(ngModel)]="calcGroup.operation">
-        <option [value]="operation" *ngFor="let operation of operations">
+        <option [value]="operation.value" *ngFor="let operation of calcOperations | keyvalue">
             {{operation}}
         </option>
     </select>
