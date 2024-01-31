@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-calculator',
-  templateUrl: './calculator.component.html',
-  styleUrl: './calculator.component.css'
-})
+
 
 interface ICalcGroup {
   first: CalcVar,
@@ -35,7 +31,11 @@ enum EnumCalcModific {
 
 
 
-
+@Component({
+  selector: 'app-calculator',
+  templateUrl: './calculator.component.html',
+  styleUrl: './calculator.component.css'
+})
 
 export class CalculatorComponent {
 
