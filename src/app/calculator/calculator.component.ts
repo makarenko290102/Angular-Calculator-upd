@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 interface ICalcGroup {
   first: CalcVar,
   second: CalcVar,
-  iperation: EnumCalcOperations
+  operation: EnumCalcOperations
 }
 
 interface CalcVar{
@@ -39,7 +39,7 @@ enum EnumCalcModific {
 
 export class CalculatorComponent {
 
-  public calcOperations = EnumCalcOperation
+  public calcOperations = EnumCalcOperations
   public calcModific = EnumCalcModific
   public calcGroups : ICalcGroup[] = [
     {
@@ -51,7 +51,7 @@ export class CalculatorComponent {
       value: 20,
       modificator: EnumCalcModific.none
     },
-    operations: EnumCalcOperations.plus
+    operation: EnumCalcOperations.plus
     } 
   ]
 
@@ -59,7 +59,7 @@ export class CalculatorComponent {
 
   public operationBetwGroups: EnumCalcOperations[] = [];
   
-  public opr: string[] = [];
+ 
 
   
   //public first: number = 1;
