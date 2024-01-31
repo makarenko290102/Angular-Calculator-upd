@@ -58,8 +58,8 @@ export class CalculatorComponent {
   public logHistory: string[] = [];  //сбоку
 
   public operationBetwGroups: EnumCalcOperations[] = [];
-  //
-
+  
+  public opr: string[] = [];
 
   
   //public first: number = 1;
