@@ -24,11 +24,9 @@ enum EnumCalcModific {
   none = 'none',
   sin = 'sin',
   cos = 'cos',
-  square = 'square', //quadratic
+  square = 'square', 
   sqrt = 'sqrt'
 }
-
-
 
 
 @Component({
