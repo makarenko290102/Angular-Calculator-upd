@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { countReset } from 'console';
+import { start } from 'repl';
+
 
 
 
@@ -32,7 +35,7 @@ enum EnumCalcModific {
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
-  styleUrl: './calculator.component.css'
+  styleUrl: './calculator.component.scss'
 })
 
 export class CalculatorComponent {
@@ -57,8 +60,25 @@ export class CalculatorComponent {
 
   public operationBetwGroups: EnumCalcOperations[] = [];
   
- 
+  public result? : number;
 
+  public addGroup(): void {
+    this.calcGroups.push({
+      first:{
+        value: 0, 
+        modificator: EnumCalcModific.none
+      },
+      second:{
+        value:0,
+        modificator: EnumCalcModific.none
+      },
+      operation: EnumCalcOperations.plus
+    })
+  }
+  
+  public removeGroup(index: number):void{
+    this.calcGroups.splice(index, 1)
+  }
   
   //public first: number = 1;
   //public second: number = 1;

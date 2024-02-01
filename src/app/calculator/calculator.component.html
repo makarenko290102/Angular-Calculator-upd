@@ -1,5 +1,12 @@
 <div class = "calculator">
     <ng-container *ngFor="let group of calcGroups">
+        <select class="calculator__select__modif" 
+        [(ngModel)]="group.first.modificator">
+            <option [value]="modificator.value" 
+            *ngFor="let modificator of calcModific | keyvalue">
+                {{modificator.value}}
+            </option>
+        </select>  
     <input 
     type="number" 
     class="calculator__input" 
@@ -11,6 +18,14 @@
             {{operation.value}}
         </option>
     </select>
+    <select class="calculator__select__modif" 
+        [(ngModel)]="group.second.modificator">
+            <option [value]="modificator.value" 
+            *ngFor="let modificator of calcModific | keyvalue">
+                {{modificator.value}}
+            </option>
+        </select>  
+
     <input type="number" 
     class="calculator__input" 
     [(ngModel)]="group.second.value"/>
