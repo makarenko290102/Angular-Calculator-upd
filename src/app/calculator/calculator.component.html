@@ -1,3 +1,23 @@
+<style>
+
+    select {
+            color: blue; /* 1 */
+            font-size: inherit; /* 1 */ /* 1 */
+            margin: 0;
+            width: 70px;
+            
+            
+    }
+    input{
+        color: darkblue;
+            box-sizing: border-box; /* 1 */
+            font-size: inherit;
+            line-height: 1.7; /* 1 */
+            border-radius: 0.25rem;
+            width: 50px;
+    }
+</style>
+
 <div class = "calculator">
     <ng-container *ngFor="let group of calcGroups">
         <select class="calculator__select__modif" 
@@ -32,6 +52,8 @@
 </ng-container>
     
     <span class="calculator__result">
+        </span> 
+
         <!--{{result ? result : 'Нажмите "Расчитать"'}}-- чтоб не ругался> 
     </span>
     <button>Рассчитать</button>
