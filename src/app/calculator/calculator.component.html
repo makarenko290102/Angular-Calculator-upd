@@ -20,6 +20,8 @@
 
 <div class = "calculator">
     <ng-container *ngFor="let group of calcGroups">
+        <div class="calculator__container">
+            <span>(</span>
         <select class="calculator__select__modif" 
         [(ngModel)]="group.first.modificator">
             <option [value]="modificator.value" 
@@ -49,18 +51,20 @@
     <input type="number" 
     class="calculator__input" 
     [(ngModel)]="group.second.value"/>
-</ng-container>
+        </div>
+        
+        
+    </ng-container>
+    
     
     <span class="calculator__result">
+        {{result ? result : 'Нажмите "Расчитать"'}}
         </span> 
-
-        <!--{{result ? result : 'Нажмите "Расчитать"'}}-- чтоб не ругался> 
-    </span>
-    <button>Рассчитать</button>
+<div>
+    <button class="calculator__btn">Рассчитать</button>
+    <button class="calculator__btn" (click)="addGroup()">Добавить группу</button>
 </div>
-<span>
-    
-</span>
+
 
 <!--Доделать
 -стили можно добавить

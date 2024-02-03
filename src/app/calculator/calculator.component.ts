@@ -80,35 +80,36 @@ export class CalculatorComponent {
     this.calcGroups.splice(index, 1)
   }
   
-  //public first: number = 1;
-  //public second: number = 1;
+//   public first: number = 1;
+//   public second: number = 1;
 
-  //public operation: string = '+';
+//   public operation: string = '+';
 
-  //public operations: string[] = ['+', '-', '*', '/'];
+//   public operations: string[] = ['+', '-', '*', '/'];
 
-  //public result?: number;
+//   //public result?: number;
 
-  //public calc(){
-//if(this.operation){
-  //switch(this.operation){
-   // case '+':
-      //this.result = this.first + this.second;
-    //  break;
-    //case '-':
-     // this.result = this.first - this.second;
-     // break;
-    //case '*':
-      //this.result = this.first * this.second;
-     // break;
-    //case '/':
-     // this.result = this.first / this.second
+//   public calc(){
+// if(this.operation){
+//   switch(this.operation){
+//     case '+':
+//       this.result = this.first + this.second;
+//       break;
+//     case '-':
+//       this.result = this.first - this.second;
+//       break;
+//     case '*':
+//       this.result = this.first * this.second;
+//       break;
+//     case '/':
+//       this.result = this.first / this.second
   
- // }
-//}
+//   }
 // }
+//  }
 
 }
+
 
 
 
