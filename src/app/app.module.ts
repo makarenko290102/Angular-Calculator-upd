@@ -4,17 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CalculatorComponent } from './calculator/calculator.component';
+import { CalculatorModule } from './calculator.module';
+import { Navigation } from './components/navigation/navigation.component';
+import { EmptyPage } from './components/empty-route/empty-route.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalculatorComponent
+    Navigation,
+    EmptyPage
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    CalculatorModule
   ],
   providers: [
     provideClientHydration()
