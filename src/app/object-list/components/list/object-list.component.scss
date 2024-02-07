@@ -1,0 +1,23 @@
+.object-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+.object-list .object-list__item {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all ease-in-out;
+}
+.object-list .object-list__item :hover {
+  transform: scale(1.05);
+}
+.object-list .object-list__item span {
+  font-size: 10px;
+  font-weight: bold;
+}

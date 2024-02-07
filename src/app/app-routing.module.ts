@@ -11,12 +11,16 @@ const routes: Routes = [
   component: CalculatorComponent
  },
  {
-  path: '', redirectTo: 'calculator', pathMatch: 'full'
+  path: '', redirectTo: 'home', pathMatch: 'full'
 
  },
  {
  path: 'home',
  component: HomePage
+ },
+ {
+  path: 'object-list',
+  loadChildren: () => import('./object-list/components/object-list.module').then((e) => e.ObjectListModule)
  },
  {
   path: '**',
