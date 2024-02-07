@@ -7,12 +7,15 @@ import { AppComponent } from './app.component';
 import { CalculatorModule } from './calculator.module';
 import { Navigation } from './components/navigation/navigation.component';
 import { EmptyPage } from './components/empty-route/empty-route.component';
+import { HomePage } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Navigation,
-    EmptyPage
+    EmptyPage,
+    HomePage
+
   ],
   imports: [
     BrowserModule,

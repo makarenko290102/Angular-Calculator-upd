@@ -1,0 +1,14 @@
+/* Шапка главная */
+
+
+div.title {
+
+text-align: center;
+bottom: 95%;
+color: rgb(196, 24, 104);
+font-size: 15px;
+}
+body{
+    background-color: rgb(236, 208, 129);
+}
+
